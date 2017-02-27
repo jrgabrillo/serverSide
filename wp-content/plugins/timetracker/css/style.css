@@ -1,0 +1,8 @@
+body{
+}
+
+a.toplevel_page_timeTracker .wp-menu-image img{
+	padding: 5px !important;
+	background-size:cover;
+	width:25px;
+}
