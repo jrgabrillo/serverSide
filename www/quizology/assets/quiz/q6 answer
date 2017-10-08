@@ -1,0 +1,11 @@
+1. tileSprite
+2. x position || x || x coordinate
+3. y position || y || y coordinate
+4. tile width || image/picture/photo width || width
+5. tile height || image/picture/photo height || height
+6. image || render texture || bitmap data || texture
+7. backgroundColor
+8. game.cache.getImage("bundok1").height || game.cache.getImage('bundok1').height
+9. game.cache.getImage("bundok2").height || game.cache.getImage('bundok2').height
+10. game.cache.getImage("bundok3").height || game.cache.getImage('bundok3').height
+11-13. tilePosition

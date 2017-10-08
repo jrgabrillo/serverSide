@@ -1,0 +1,152 @@
+body{
+	background: #e4eae6;
+	font-size: 12px;
+}
+
+a{
+	outline: none !important;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.navbar-inverse{
+	background: #343838;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color:#ddd;
+}
+
+.navbar-brand{
+	padding:12px 20px 13px 50px;
+	color:#ddd !important;
+	font-size:22px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+.navbar-brand img{
+	margin-right:5px;
+	vertical-align: top;
+	height:27px;
+}
+
+h3.page-header{
+	border-bottom: 1px solid #68c39f;
+	color:#68c39f;
+}
+
+.bs-docs-header{
+	background: #abb7b7;
+	min-height:300px;
+	color:#fff;
+	padding-bottom:50px;
+}
+
+.bs-docs-sidebar{
+	background: #323a45;
+	padding-top:20px;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+.bs-docs-sidebar.affix-bottom, .bs-docs-sidebar.affix{
+	margin-top: 0pc !important;
+}
+
+.bs-docs-sidebar .nav > li > a{
+	color:#fff;
+}
+
+.bs-docs-sidebar .nav > .active > a, .bs-docs-sidebar .nav > .active:hover > a, .bs-docs-sidebar .nav > .active:focus > a{
+	border-left: 2px solid #68c39f ;
+	color:#68c39f ;
+}
+
+.bs-docs-sidebar .nav > li > a:hover, .bs-docs-sidebar .nav > li > a:focus{
+	color:#68c39f ;
+	border-color:#68c39f;
+}
+
+.back-to-top,.back-to-top:hover, .back-to-top:focus, .bs-docs-theme-toggle{
+	color:#eb5055 ;
+}
+
+.adjustable{
+	max-width:100%;
+}
+
+hr.divider{
+	margin:30px 0px;
+	border-color: rgba(0,0,0,0.1);
+}
+
+.bs-docs-section{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.highlight {
+	margin-bottom:14px;
+	background-color:#f7f7f9;
+	border:1px solid #e1e1e8;
+	border-radius:4px;
+	padding:9px 14px;
+}
+
+.highlight pre {
+	margin-top:0;
+	margin-bottom:0;
+	word-break:normal;
+	word-wrap:nowrap;
+	white-space:nowrap;
+	background-color:transparent;
+	border:0;
+	padding:0;
+}
+
+.highlight pre code {
+	font-size:inherit;
+	color:#333;
+}
+
+.highlight pre code:first-child {
+	display:inline-block;
+	padding-right:45px;
+}
+.highlight pre code.bash{
+	line-height: 15px;
+}
+
+.zero-clipboard {
+	position:relative;
+	display:none;
+}
+
+.btn-clipboard {
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:10;
+	display:block;
+	font-size:12px;
+	color:#777;
+	cursor:pointer;
+	background-color:#fff;
+	border:1px solid #e1e1e8;
+	border-radius:0 4px 0 4px;
+	padding:5px 8px;
+}
+
+.inner-section{
+	clear: both;
+	float: left;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom:30px;
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+}

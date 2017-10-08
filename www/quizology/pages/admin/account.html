@@ -1,0 +1,57 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h5 class="breadcrumbs-title">Account</h5>
+				<ol class="breadcrumbs">
+					<li><a href="../account/">Dashboard</a></li>
+					<li class="active">Account</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+    <div class="container">
+        <div class="section">
+			<div class="row margin">
+				<div class='col s12 m4 l4'>
+					<h5 class="card-title grey-text text-darken-4">Add administrator</h5>
+					<div id="display_newAdmin"></div>
+				</div>
+				<div class='col s12 m8 l8'>
+					<div class='card'>
+						<div class='card-content'>
+							<table>
+								<tr>
+									<td><strong>Name:</strong> <span id='display_adminName'></span></td><td class='right'></td>
+								</tr>
+									<td><strong>Email:</strong> <span id="display_email"></span></td><td class='right'></td>
+								</tr>
+								<tr>
+									<td><strong>Username:</strong> <span id="display_username"></span></td><td class='right'></td>
+								</tr>
+								<tr>
+									<td><strong>Password:</strong> <span id="display_password">Active</span></td><td></td>
+								</tr>
+								<tr>
+									<td><strong>Status:</strong> <span id="display_status"></span></td><td class='right'></td>
+								</tr>
+								<tr>
+									<td><strong>Date Added:</strong> <span id="display_date"></span></td><td class='right'></td>
+								</tr>
+							</table>
+							<div class='divider'></div>
+							<span class="card-title  activator grey-text text-darken-4">Other Accounts</span>
+							<div id='display_adminList'></div >
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	admin.add();
+	admin.list();
+</script>

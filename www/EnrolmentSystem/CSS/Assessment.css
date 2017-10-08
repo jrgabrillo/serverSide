@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+	input:focus{
+		box-shadow:0px 2px 1px #ccc inset;
+		-webkit-box-shadow:0px 2px 1px #ccc inset;
+		-moz-box-shadow:0px 2px 1px #ccc inset;
+		-ms-box-shadow:0px 2px 1px #ccc inset;
+		-o-box-shadow:0px 2px 1px #ccc inset;
+	}
+	#Header{
+		position:absolute; top:0px;
+	}
+	#Content{
+		width:100% !important; box-sizing:border-box; padding-bottom:100px;
+	}
+	#Content #RegistrarContent{
+		width:70% !important; margin:0 auto; padding-top:30px; /* background:#fff; overflow:hidden;	*/
+	}
+	#PictureProfile img{
+		width:100px; height:100px;
+	}
+	#PrintMe{
+		margin:0 auto; margin-top:30px; float:right; margin-right:50%;
+	}
+	.TitleHr{
+		color:#666; border:1px solid #ccc; border-bottom:0px solid #ccc; width:90%; margin:0 auto; height:0px; margin-top:30px; margin-bottom:20px;
+	}
+	.TitleHr span{
+		background:#fff; border:1px solid #ccc;
+		position:relative; top:-10px; padding:5px;
+	}

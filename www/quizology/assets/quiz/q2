@@ -1,0 +1,69 @@
+1. What is the largest git hosting site?
+2. By default, in your own repository, your branch is ___________?
+
+3. Git command in creating a repository.
+4. Get status of your repository.
+5. Git command in uploading codes.
+6. Git command in cloning a repository.
+7. Used to be most common transport for git.
+8. atleast 2 out of 4 Pros and 1 Cons of SSH.
+9. Assume I have a repo(repository) named gameDev.git(20pts) and your account is  jrGabrillo
+What are the commands in:
+-clonning the repository
+-getting repo status
+-adding / committing updates
+-uploading updates to git repo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. github.com
+2. Master
+3. git remote add [shortname] [your git repository]
+4. git status
+5. git push
+6. git clone https://github.com/[your git account]/[git 
+repository].git or git clone https://github.com:[your git account]/[git repository].git
+7. SSH
+8. pros
+	1. Allow reads and writes
+	2. Authenticated network protocol
+	3. Secure: data transfer is encrypted and authenticated
+	4. Efficient: makes data as compact as possible
+cons
+	1. No anonymous read-only access
+9.
+-git clone https://github.com/[your git account]/[git]
+-git status
+-git add . or git commit -m "comments";
+-git push

@@ -1,0 +1,17 @@
+<div style="text-align: center">
+You are not allowed to access this page.<br/>
+You will be redirected to home page in <span id='counter'>5</span> seconds.
+</div>
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+    var count = 5;
+    setInterval(function(){
+        if(count<=0){
+            window.location.href='../';
+        }
+        else{
+            count--;
+            $('#counter').html(count);
+        }
+    },1000);
+</script>

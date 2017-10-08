@@ -1,0 +1,4 @@
+DirectoryIndex index.html
+
+# enable directory browsing
+Options All +Indexes

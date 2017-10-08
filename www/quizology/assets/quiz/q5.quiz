@@ -1,0 +1,31 @@
+1. What are the 3 most supported audio format (3 points).
+2.  basicGame.prototype = {
+    	preload: function(){
+    		a. //add your game audio here with the sound earthquake and an identifier: backgroundMusic
+
+    		b. //add your game audio here with the sound cry and an identifier: soundEffect
+    	},
+    	create:function(){
+    		c. // declare your background music here and assign it to variable bgMusic. Do not add the optional parameters.
+
+    		d. // play the bgMusic here.
+
+    		process.loopAudio(7000);
+
+    		e. // declare your sound effect here and assign it to variable soundEffect.  Do not add the optional parameters.
+    		f. // play the soundEffect here.
+    	},
+    	update:function(){
+
+    	}
+    }
+
+    var process = function(){
+    	"use strict"
+    	return {
+    		loopAudio:function(time){
+    			g. // add the loop functionality here
+    		}
+    	}
+    }();
+

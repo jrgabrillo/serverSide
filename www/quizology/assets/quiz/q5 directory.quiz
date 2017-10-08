@@ -1,0 +1,19 @@
+directory:
+
+gameDev
+	|
+	+- music
+	|	|
+	|	+-cry.mp3
+	|	+-earthquake.mp3
+	|
+	+- img
+	|
+	+- js
+	|	|
+	|	+- phaser.min.js
+	|	+- process1.js
+	|	+- process2.js
+	|	+- process3.js
+	|
+	+- index.html

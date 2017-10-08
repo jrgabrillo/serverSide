@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rufo N. Gabrillo Jr." />
+    <meta name="description" content="PSU Developer's Guild is an organization that aims to help students to gain more skills that they can use for safe computing." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PSU Developer's Guild</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+</head>
+
+<body> 
+    <div id="preloader"><span>PSU LC Developer's Guild<br/>LOADING...</span></div>
+    <div class="overlay"></div>
+    <div id="fullpage">
+        <nav class="" style="position: fixed; top: 0px; background: transparent !important; box-shadow: none;">
+            <div class="nav-wrapper">
+                <h6 style="margin-left: 10px;">PSU Developer's Guild</h6>
+            </div>
+        </nav>
+        <div class="row" id="display">
+            <div class="col s12 m7 l6" id='display_left'>
+                <div class="section ">
+                    <div class="wrap">
+                        <div class="row">
+                            <h1>Welcome <strong>geek</strong></h1>
+                            <h6 class="white-text">We know you got a lot of skills already. 
+                            <br>Share us what you got and let's improve together.</h6> 
+                            <ul class="collection skills">
+                                <li class="collection-item avatar white-text">
+                                    <img alt="" class="circle" src="images/webdev.png" style="border-radius: 0%;">
+                                    <h6>Web Development</h6>
+                                </li>
+                                <li class="collection-item avatar white-text">
+                                    <img alt="" class="circle" src="images/appdev.png" style="border-radius: 0%;">
+                                    <h6>App Development</h6>
+                                </li>
+                                <li class="collection-item avatar white-text">
+                                    <img alt="" class="circle" src="images/graphicdesign.png" style="border-radius: 0%;">
+                                    <h6>Graphic Design</h6>
+                                </li>
+                            </ul>
+
+                            <a href="#Register" class="waves-effect waves-light btn">Register now for free</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="display_form">
+                    <div class="wrap">
+                        <div class="row">
+                            <div class="col s12">
+                                <h2>Let us know <strong>you</strong></h2>
+                                <form role="form" method="post" id='form_registration'>
+                                    <div class="mdl-grid">
+                                        <div class="input-field col s12 m6 l6" style="margin-bottom: 10px;">
+                                            <input type="text" id="field_name" name="field_name">
+                                            <label for="field_name">Full Name</label>
+                                        </div>
+                                        <div class="input-field col s6 m6 l6" style="margin-bottom: 10px;">
+                                            <input type="text" id="field_email" name="field_email">
+                                            <label for="field_email">Email</label>
+                                        </div>
+                                        <div class="input-field col s6 m6 l6" style="margin-bottom: 10px;">
+                                            <input type="text" id="field_phone" name="field_phone">
+                                            <label for="field_phone">Phone Number</label>
+                                        </div>
+                                        <div class="input-field col s12 m6 l6" style="margin-bottom: 10px;">
+                                            <select class="icons" id="field_skill" name="field_skill">
+                                                <option class="left circle" data-icon="images/appdev.png">Apps Development</option>
+                                                <option class="left circle" data-icon="images/webdev.png">Web Development</option>
+                                                <option class="left circle" data-icon="images/graphicdesign.png">Graphic Design</option>
+                                            </select>
+                                            <label>Skill</label>
+                                        </div>
+                                        <div class="input-field col s12" style="margin-bottom: 10px;">
+                                            <input type="text" id="field_address" name="field_address">
+                                            <label for="field_address">Complete Address</label>
+                                        </div>
+                                        <div class="input-field col s12" style="margin-bottom: 10px;">
+                                            <textarea class="materialize-textarea" type="text" rows="3" name="field_dream" id="field_dream"></textarea>
+                                            <label for="field_dream">Where do you see yourself 5 years from now?</label>
+                                        </div>
+                                        <div class="input-field col s12" style="margin-bottom: 10px;">
+                                            <button type="submit" class="waves-effect waves-light btn">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="col s12 m5 l6" id='display_right'>
+                <div class="wrap">
+                    <div id="hand">
+                        <img src="images/side.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap" style="display: none;">
+        <div id="social-icons">
+            <ul>
+                <li><a href=""><i class="flaticon-facebook6"></i></a></li>
+                <li><a href=""><i class="flaticon-social19"></i></a></li>
+                <li><a href=""><i class="flaticon-google16"></i></a></li>
+                <li><a href=""><i class="flaticon-social40"></i></a></li>
+                <li><a href=""><i class="flaticon-social7"></i></a></li>
+                <li><a href=""><i class="flaticon-logo3"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/system.js"></script>
+    <script src="js/cbpFWTabs.js"></script>
+    <script src="js/jquery.sidr.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/video.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select').material_select();
+        });        
+    </script>
+</body>
+</html>

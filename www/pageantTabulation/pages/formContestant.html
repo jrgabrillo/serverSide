@@ -1,0 +1,120 @@
+<div class='popup'>
+	<div class='row'>
+		<div class='col-100'>
+			<form id='candidateForm' method='POST'>
+				<div class='list-block'>
+				    <div class='list-block-label'>
+				        <p><h1>Adding contestant</h1></p>
+				    </div>
+				</div>
+				<div class='content-block'>
+				<div class='list-block inputs-list'>
+					<ul>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-content row'>
+									<div class='image-crop col-40' style='margin-bottom:10px;'>
+										<img width='100%' src='../img/avatar.jpg'>
+									</div>
+									<div class='col-100 row'>
+										<div class='col-20'>
+											<label for='inputImage' class='button button-fill color-green' title='Load image'>
+												<input type='file' accept='image/*' name='file' id='inputImage' class='hidden'>
+												<i class='zmdi zmdi-upload'></i>
+											</label>
+										</div>
+										<div class='col-20'>
+											<button class='button button-fill color-red hidden' data-cmd='cancel' type='button' title='Cancel'>
+												<i class='zmdi zmdi-close'></i>
+											</button>
+										</div>
+										<div class='col-20'>
+											<button class='button button-fill color-blue hidden' data-cmd='rotate' data-option='-90' type='button' title='Rotate left' >
+												<i class='zmdi zmdi-rotate-left'></i>
+											</button>
+										</div>
+										<div class='col-20'>
+											<button class='button button-fill color-blue hidden' data-cmd='rotate' data-option='90' type='button' title='Rotate right' >
+												<i class='zmdi zmdi-rotate-right'></i>
+											</button>
+										</div>
+										<div class='col-20'>
+											<button class='button button-fill color-blue hidden' data-cmd='save' type='button' title='Save'>
+												<i class='zmdi zmdi-save'></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<textarea name='contestantPicture' class='hidden'>no-image</textarea>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>First Name</div>
+								<div class='item-input item-input-field'>
+									<input type='text' name='contestantFirstName'>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>Middle Name</div>
+								<div class='item-input item-input-field'>
+									<input type='text' name='contestantMiddleName'>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>Last Name</div>
+								<div class='item-input item-input-field'>
+									<input type='text' name='contestantLastName'>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>Age</div>
+								<div class='item-input item-input-field'>
+									<input type='number' name='contestantAge'>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>Category</div>
+								<div class='item-input item-input-field'>
+									<select name='contestantCategory'>
+										<option value="Faculty">Faculty</option>
+										<option value="Student">Student</option>
+									</select>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-title label'>Other Details</div>
+								<div class='item-input item-input-field'>
+									<textarea name='contestantDetails'></textarea>
+								</div>
+							</div>
+						</li>
+						<li class='item-content'>
+							<div class='item-inner'>
+								<div class='item-input row'>
+									<div class='col-50'>
+										<a class='button button-fill color-gray close-popup'>Cancel</a>
+									</div>
+									<div class='col-50'>
+										<a class='button button-fill color-blue close-popup' data-cmd='saveContestant'>Save</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

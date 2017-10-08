@@ -1,0 +1,572 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	background:url(../Images/bgX.png);
+	/*<x>overflow:hidden;
+	 background:rgba(204,204,204,0.5) !important;*/
+}
+.hand{
+	cursor: pointer !important;
+}
+.FileInput{
+	width: 200px; 
+	height: 150px;	
+	background: url("");
+}
+.Hidden{
+	/*display: none !important;*/
+}
+
+#LeftNav button{
+	text-align:left !important;
+	border-radius:0px !important;
+	box-sizing:border-box;
+	padding:10px !important;
+	width:100%;
+}
+.Right{float:right !important;}
+.Left{float:left !important;}
+.Clear{clear:both !important;}
+a{text-decoration:none;}
+
+.Center{display:block; margin:0px auto;}
+.Long{width:50%;}
+.Long2{width:30%;}
+.WhiteText{color:#fff !important;}
+#Container{
+	width:100%;
+	min-height:640px;
+}
+#Header{
+	width:100%; height:40px; background:rgba(0,153,0,1);
+}
+	#Header{
+		width:100%; height:40px; font-size:30px; font-weight:bold; color:#fff;
+	}
+	#Header a a:link a:hover a:active{
+		width:100%; height:40px; font-size:30px; font-weight:bold; color:#fff;
+	}
+	#Header ul{
+		margin:0px; padding:0px !important; list-style:none;
+	}
+	#Header ul li{
+		list-style:none; cursor:pointer; display:inline-block;
+	}
+	#Header #Registrar li{
+		box-sizing:border-box; padding:10px;
+		color:rgba(204,204,204,1);
+	}
+#LeftNav{
+	width:20%; float:left; overflow:hidden;
+	min-height:640px; color:#333;
+}
+	#LeftNav #Registrar{
+		width:100%; height:40px;
+	}
+	#LeftNav #Registrar ul{
+		margin:0px; padding:0px !important;
+	}
+	#LeftNav #Registrar ul li{
+		list-style:none; cursor:pointer;
+	}
+	#LeftNav #Registrar li{
+		box-sizing:border-box; padding:10px;
+		color:rgba(204,204,204,1);
+	}
+	#LeftNav #Registrar .Selected{
+		background:rgba(234,234,234,1); color:#999;
+	}
+	#LeftNav #Registrar .Selected:hover{
+		background:rgba(234,234,234,1); color:#999; cursor:default;
+	}
+	#LeftNav #Registrar ul .Title{
+		cursor:default;
+		border-right:none; border-left:none;
+	}
+	#LeftNav #Registrar ul .Title:hover{
+		background:none;
+	}
+
+
+	#Content{
+		float:right; width:80% !important; height:680px; box-sizing:border-box; padding-bottom:100px; <x>overflow-y:scroll;
+	}
+
+	#Logo{
+		width:100px; height:95px; border-radius:100px; margin-bottom:30px; background:#ccc;
+	}
+	#Content #RegistrarContent{
+		width:100% !important; margin:0 auto;/* background:#fff; overflow:hidden;	*/
+	}
+	#Content #StudentsProgram{
+		width:100%; height:40px; color:#fff; font-size:12px; font-weight:bold; box-sizing:border-box; padding:10px; /*background:rgba(255,153,0,0.5);*/
+	}
+	#Content #StudentsProgram input[type="text"]:nth-child(1){
+		position:relative; top:-10px; width:150px;
+	}
+	#Content .SN{
+		color:#666; display:inline-block; margin-left:5px;
+	}
+	#Content #DataContainer ul li{
+		list-style:none; font-size:15px;
+	}
+	#Content #DataContainer ul{
+		height:50px; border-bottom:1px solid rgba(204,204,204,0.4); margin-top:0px; margin-bottom:0px; margin-left:0px; padding:5px; box-sizing:border-box;
+	}
+	#Content #DataContainer ul:hover{
+		background:rgba(204,204,204,0.2);
+	}
+	#StudentsProgram button{
+		width:26px; height:26px; padding:0px; border-radius:26px;
+		border:none; opacity:0.4;
+	}
+	#StudentsProgram button:hover{
+		background:#fff; opacity:0.3;
+	}
+	#StudentsProgram button:active{
+		background:#fff; opacity:0.5;
+	}
+	#Content #DataContainer li{
+		margin:10px; display:inline;
+	}
+	#Content #DataContainer li input[type="text"]{
+		width:60px; float:right; margin-right:10px;	
+	}
+	#StudentInformation table{
+		border:1px solid #ccc; border-bottom:none; color:#666; font-size:15px; background:#fff;
+	}
+	#StudentInformation td{
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box; padding:5px;
+	}
+	.BorderRight{
+	 	border-right:1px solid #ccc;
+	}
+	#StudentsList img{
+		width:40px; height:40px;
+	}
+	#ProfilePicture{
+		width:100px; height:100px; 
+	}	
+	#FacultyLoadingList table{
+		border:0px solid #ccc; border-bottom:none; color:#666; font-size:15px;  background:#fff;
+	}
+	#FacultyLoadingList td{
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box; height:35px;
+	}
+	#FacultyLoadingList tr:nth-child(odd){
+		background:rgba(204,204,204,0.2);
+	}
+	#FacultyLoadingList select{
+		height:30px; font-size:15px;
+	}
+	#FacultyLoadingList div{
+		display:inline-block;
+	}
+	.FacultyList{width:100px;}
+	.FacultyList select{width:100px;}
+	#FacultyLoadingList #FacultyCourse select{
+		width:250px;
+	}
+	
+	#FacultyLoadingList .FacultySubject{
+		width:300px; height:20px; overflow:hidden; text-overflow:ellipsis;
+		float:right; margin-right:10px; display:block;
+	}
+	#FacultyLoadingList .FacultyLoad{
+		float:right; cursor:pointer; margin-right:5px;
+	}
+	#SubjectList{
+		width:400px;
+	}
+	#SubjectList select{
+		width:200%; float:left;
+	}
+	div#DescriptiveTitle{
+		width:265px; min-height:10px; display:inline-block; margin-left:5px;
+	}
+		
+	#EnrolledSubjects{
+		width:100%; min-height:300px; background:rgba(80%,80%,80%,0.2); 
+	}
+	
+	#DataContainer #CashierStudentInformation{
+		width:100%; height:470px;
+	}
+	#DataContainer #CashierStudentInformation div{
+		width:20%; height:30px; display: block; float:left; margin-left:4px; margin-bottom:5px;
+	}
+
+	#SubjectContent li{
+		list-style:none; margin-left:20px;
+	}
+	#SubjectContent ul{
+		list-style:none; margin:0px; border-bottom:1px solid #ccc; min-height:40px; padding-top:5px; box-sizing:border-box;
+	}
+	#SubjectContent ul:nth-child(1):hover{
+		background:rgba(80%,80%,80%,0);	
+	}
+	#SubjectContent ul:hover{
+		background:rgba(80%,80%,80%,0.5);
+	}
+	#SubjectContent ul:nth-child(1) div:nth-child(1){
+		opacity:0; 
+	}
+	#SubjectContent ul:nth-child(1) div:nth-child(1):hover{
+		opacity:0; 
+	}
+	#SubjectContent ul div:nth-child(1){
+		opacity:0.5; cursor:pointer; border:1px solid #ccc; background:#fff; box-sizing:border-box; padding:2px;
+	}
+	#SubjectContent ul div:nth-child(1):hover{
+		opacity:0.8; cursor:pointer; border:1px solid #ccc; background:#fff;
+	}
+	#SubjectContent{
+		width:100%; height:200px;
+	}
+	#SubjectContentList{
+		width:100%; min-height:50px; box-sizing:border-box;
+	}
+	#SubjectContentList table{
+		border:1px solid #ccc;
+	}
+	#SubjectContentList td{
+		border:1px solid #ccc; box-sizing:border-box; padding-left:10px; padding-right:10px;
+	}
+	#AddSubjectDiv{
+		background:rgba(204,204,204,0.3); box-sizing:border-box; padding:10px;
+	}
+	#Registration{
+		width:100%; min-height:560px; margin:0 auto; font-size:15px; color:#666; padding-bottom:50px; box-sizing:border-box;
+	}
+	#Registration ul li{
+		list-style:none; margin-bottom:20px; font-size:13px;
+	}
+	#Registration #StudentAddress{
+		width:97.7%;
+	}
+	#Registration #StudentGuardianContactNumber{
+		width:93%;
+	}
+	#Registration #StudentCourse{
+		width:90%;
+	}
+	#Registration select{
+		<x>width:100px; <x>height: 34px;
+	}
+	#Registration ul li div{
+		display: inline-block;
+	}
+	#Registration #CourseContent{
+		background:rgba(80%,80%,80%,0.2); overflow-y:scroll; width:100%; height:372px;
+	}
+	
+	#CourseContent ul{
+		margin:0px; border-bottom:1px solid #ccc; padding-left:0px;
+	}
+	select#ProgramTitleX{
+		width:100px;
+	}
+	select#CourseUnitsX{
+		width:100px;
+	}
+	input#CourseCodeX{
+		width:90%;
+	}
+	input#DescriptiveTitleX{
+		width:100%;
+	}
+	input#CHKCourseX{
+		padding:0px; width:20px !important; height:20px !important; 
+	}
+	
+	
+#Login{
+	margin:0 auto; color:#999; margin-top:2%;
+}
+	#Login h1{
+		font-size:30px;
+		margin-top:0px;
+	}
+	#Login .LDiv1{
+		width:30%; min-height:350px; box-sizing:border-box; padding:10px; padding-top:30px; padding-bottom:30px;
+		border:thin solid #ccc; background:#fff; color:#ccc;
+	}
+	#Login .LDiv1 img{
+		width:100px; height:95px; margin-bottom:30px;
+	}
+	#Login .Error{
+		width:30%; min-height:50px; box-sizing:border-box; padding:10px; text-align:justify;
+		border:thin solid #ccc; border-top:5px solid rgba(0,153,204,1); background:#fff; color:#999; margin-bottom:10px;
+	}
+	
+.Box-shadow{
+	box-shadow:0px 2px 1px #ccc;
+	-webkit-box-shadow:0px 2px 1px #ccc;
+	-moz-box-shadow:0px 2px 1px #ccc;
+	-ms-box-shadow:0px 2px 1px #ccc;
+	-o-box-shadow:0px 2px 1px #ccc;
+}
+.Box-shadow-inset{
+	box-shadow:0px 2px 1px #ccc inset;
+	-webkit-box-shadow:0px 2px 1px #ccc inset;
+	-moz-box-shadow:0px 2px 1px #ccc inset;
+	-ms-box-shadow:0px 2px 1px #ccc inset;
+	-o-box-shadow:0px 2px 1px #ccc inset;
+}
+.Transition{
+	-webkit-transition:ease-in-out 0.5s;
+	-moz-transition:ease-in-out 0.5s;
+	-ms-transition:ease-in-out 0.5s;
+	-o-transition:ease-in-out 0.5s;
+	transition:ease-in-out 0.5s;
+}
+hr{
+	width:80%; border:none; border-bottom:1px solid #ccc; margin-top:20px; margin-bottom:20px;
+}
+#FileSelect{
+	overflow:hidden; width:97px; height:97px;
+	font-size:15px; margin-top:10px; border:none; background: url(../StudentsPicture/Default.png) no-repeat; color:#fff;
+}
+#FileSelect:hover{
+	background: url(../StudentsPicture/Default.png) no-repeat; opacity:0.7;
+}
+#FileSelect input[type="file"]{
+	background:#f00; opacity:0; height:100px; margin:0px;
+}
+#PopUp{
+	position:relative; width:80%; height:600px; background:#fff; margin:0 auto; margin-top:3%;
+}
+#PopUpPicture{
+	position:relative; width:1024px; height:600px; background:#fff; margin:0 auto; z-index:9; box-sizing:border-box;
+}
+#PopUpCourse{
+	position: absolute; width:720px; min-height:600px; background:#fff; margin-left:5%; margin-top:1%; z-index:9; box-sizing:border-box; display:inline-block; padding-right:30px;
+}
+#PopUpEnrol{
+	position: absolute; width:720px; min-height:600px; background:#fff; margin-left:5%; margin-top:1%; z-index:9; box-sizing:border-box; display:inline-block; padding-right:30px;
+}
+
+#Program{
+	/* background:rgba(255,153,0,0.5); width:100%; height:40px; */box-sizing:border-box; padding:0px;
+	font-weight:bold;
+}
+#Program2{
+	background:rgba(255,153,0,0.5); width:720px; height:40px; box-sizing:border-box; padding:10px; color:#fff; font-weight:bold;
+}
+#Program3{
+	background:rgba(255,153,0,0.5); width:720px; height:40px; box-sizing:border-box; padding:10px; color:#fff; font-weight:bold;
+}
+#PopUpError{
+	width:350px; min-height:50px; background:#fff; box-sizing:border-box; padding:5px; padding-top:10px; float:right; color:#444; margin-right:5%; margin-top:1%;
+	border-top:5px solid rgba(0,153,204,1); 
+}
+#PopUpError ul li{
+	list-style:none; margin-top:10px;
+}
+#PopUpShade{
+	width:100%; position:fixed; color:#444;
+	min-height:740px; display:none;
+}
+.Floatright{
+	float:right; font-size:12px;
+}
+
+.Triangle{
+	width:0px; height:0px; margin:0 auto; border-bottom:10px solid transparent; border-right:10px solid transparent; border-top:10px solid rgba(0,153,51,0.9); border-left:10px solid rgba(0,153,51,0.9); margin-top:10px; position:relative; top:10px;  text-decoration:none;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-0-transform:rotate(45deg);
+}
+
+#StudentInfoDropDown{
+	min-height:50px; width:100%; display:none; cursor:pointer;
+}
+#StudentInfoDropDown li{
+	list-style:none; text-decoration:none;
+	box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+}
+#StudentInfoDropDown li:hover{
+	background:rgba(0,153,51,0.8);
+}
+#StudentInfoDropDown ul{
+	margin-top:0px;
+}
+
+#AddStudentDropDown{
+	min-height:50px; width:100%; display:none; cursor:pointer;
+}
+#AddStudentDropDown li{
+	list-style:none; margin-left:0px;
+	/*background:rgba(0,153,51,0.7);*/ text-decoration:none;
+	box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+}
+#AddStudentDropDown li:hover{
+	background:rgba(0,153,51,0.8);
+}
+#AddStudentDropDown ul{
+	margin-top:0px;
+}
+
+
+#ChartDropDown{
+	min-height:50px; width:100%; display:none; cursor:pointer;
+}
+#ChartDropDown li{
+	list-style:none; margin-left:0px;
+	text-decoration:none;
+	box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+}
+#ChartDropDown li:hover{
+	background:rgba(0,153,51,0.8);
+}
+#ChartDropDown ul{
+	margin-top:0px;
+}
+
+#ChartTypeDropDown{
+	min-height:50px; width:100%; display:none; cursor:pointer;
+}
+#ChartTypeDropDown li{
+	list-style:none; margin-left:0px;
+	text-decoration:none;
+	box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+}
+#ChartTypeDropDown li:hover{
+	background:rgba(0,153,51,0.8);
+}
+#ChartTypeDropDown ul{
+	margin-top:0px;
+}
+
+#ListTypeDropDown{
+	min-height:50px; width:100%; display:none; cursor:pointer;
+}
+#ListTypeDropDown li{
+	list-style:none; margin-left:0px;
+	text-decoration:none;
+	box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+}
+#ListTypeDropDown li:hover{
+	background:rgba(0,153,51,0.8);
+}
+#ListTypeDropDown ul{
+	margin-top:0px;
+}
+
+/*
+
+#StudentInfoDropDown{
+	min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute; right:10%; top:30px;
+}
+#StudentInfoDropDown li{
+	list-style:none; margin-left:0px; background:#fff;
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.7); text-decoration:none;
+	height:40px; width:130px; box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+	border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+}
+#StudentInfoDropDown li:hover{
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.8);
+}
+#StudentInfoDropDown ul{
+	margin-top:0px;
+}
+
+
+
+#AddStudentDropDown{
+	min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute; right:2.5%;  top:30px;
+}
+#AddStudentDropDown li{
+	list-style:none; margin-left:0px; background:#fff;
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.7); text-decoration:none;
+	height:40px; width:130px; box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+	border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+}
+#AddStudentDropDown li:hover{
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.8);
+}
+#AddStudentDropDown ul{
+	margin-top:0px;
+}
+
+
+#ChartDropDown{
+	min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute; right:27%;  top:30px;
+}
+#ChartDropDown li{
+	list-style:none; margin-left:0px; background:#fff;
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.7); text-decoration:none;
+	height:40px; width:130px; box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+	border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+}
+#ChartDropDown li:hover{
+	//background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.8);
+}
+#ChartDropDown ul{
+	margin-top:0px;
+}
+
+#ChartTypeDropDown{
+	min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute;
+}
+#ChartTypeDropDown li{
+	list-style:none; margin-left:0px; background:#fff;
+	/*background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.7); text-decoration:none;
+	height:40px; width:130px; box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+	border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+}
+#ChartTypeDropDown li:hover{
+	/*background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.8);
+}
+#ChartTypeDropDown ul{
+	margin-top:0px;
+}
+
+#ListTypeDropDown{
+	min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute;
+}
+#ListTypeDropDown li{
+	list-style:none; margin-left:0px; background:#fff;
+	/*background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.7); text-decoration:none;
+	height:40px; width:130px; box-sizing:border-box; padding:12px;
+	color:rgba(255,255,255,0.9);
+	border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+}
+#ListTypeDropDown li:hover{
+	/*background:rgba(0,102,204,0.9);
+	background:rgba(0,153,51,0.8);
+}
+#ListTypeDropDown ul{
+	margin-top:0px;
+}
+*/
+#ImageFlip{
+	width: 300px;
+	height: 300px;
+	transition: 8s;
+	transform-style:preserve-3d;
+	transform: rotateY(0deg);
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+	input[type="text"]{
+		width:20% !important; padding:5px; font-size:15px; border:thin solid #ccc;
+	}
+	#Content{
+		width:100% !important; box-sizing:border-box; padding-bottom:100px; overflow-y:scroll;
+	}
+	#Content #RegistrarContent{
+		width:70% !important; margin:0 auto; padding-top:30px; /* background:#fff; overflow:hidden;	*/
+	}

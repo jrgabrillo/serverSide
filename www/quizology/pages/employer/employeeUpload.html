@@ -1,0 +1,66 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m9 l9">
+				<h5 class="breadcrumbs-title">Uploading Employees List</h5>
+				<ol class="breadcrumbs">
+					<li><a href="../account/">Dashboard</a></li>
+					<li><a href="../account/#cmd=index;content=employee">Employee</a></li>
+					<li class="active">Uploading Employees List</li>
+				</ol>
+			</div>
+			<div class='col s12 m2 l2 input-field right'>
+				<!-- <a class="btn waves-effect waves-light orange right" id="add_client">Add Employee</a> -->
+				<select class="select-dropdown" id="field_addEmployee">
+					<option disabled="" selected>Add employee</option>
+					<option>Manual</option>
+					<option selected>Bulk upload</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+    <div class="container">
+        <div class="section">
+			<div class="row margin">
+				<h1>Bulk upload</h1>
+				<div class='col s12 m12 l12'>
+                    <label class='active'>Select excel file: <span id="display_excelFile"></span></label><br/>
+                    <label for="field_file" class='btn waves-effect waves-light red' style='color: #fff;cursor:pointer;'>Select file</label>
+                    <input id='field_file' class="btn btn-sm blue waves-effect waves-light hidden" type="file" name="field_file" data-error=".error_excelFile">
+                    <br/><br/><div class="error_excelFile"></div>
+ 				</div>
+			</div>
+            <div class="row">
+                <div class='col s12' id="display_importLoading" style="margin-top:20px; position: relative;"></div>
+                <div class='col s12 hidden' id="display_import" style="margin-top:20px; position: relative;">
+                    <div class='card'>
+                        <div class="card-content">
+                            <input id='save_import' class="btn btn-sm blue waves-effect waves-light" type="button" value="Save">
+                            <h6 class='text-red'>*Name with in red color will not be added. <br/>Reason: Email or Employee ID is duplicated.</h6>
+                            <table id='importPreview' class='responsive-table display dataTable bordered' width="100%">
+                                <thead>
+                                    <tr>
+                                        <td width='1%'>#</td>
+                                        <td>Employee ID</td>
+                                        <td>Last Name</td>
+                                        <td>First Name</td>
+                                        <td>Date of Birth</td>
+                                        <td>Gender</td>
+                                        <td>Email</td>                                        
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	// client.ini();
+	employer.uploadEmployee();
+    $("select").material_select();
+</script>

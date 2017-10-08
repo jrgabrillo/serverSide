@@ -1,0 +1,276 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+.swiper-custom {
+  position:relative;
+  height:100%;
+}
+.swiper-container {
+  height:100%;
+}
+.swiper-slide {
+  background: #fff;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 20px;
+  font-size:21px;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border:1px solid #aaa;
+  border-radius: 0 0 0 0;
+  opacity:1;
+  cursor: pointer;
+  margin:2px;
+}
+.swiper-pagination-bullet-active {
+  width: 25px;
+  height: 25px;
+  background: transparent !important;
+  border: solid 2px #007aff;
+}   
+
+.swiper-pagination{
+    position: relative;
+    margin: 0 auto;
+    /*background: #fff;*/
+}
+
+.custom-file-input {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+.custom-file-input input{
+    opacity: 0;
+}
+.custom-file-input:before {
+    content: 'Choose a picture';
+    display: block;
+    width: 40%;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10pt;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color:#ccc;
+}
+
+.custom-file-input:hover:before {
+    border-color: #007AFF;
+}
+.custom-file-input:active:before {
+    background: #007AFF;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.tooltip {
+    position:absolute;
+    max-width: 100px;
+    padding:10px;
+    text-align: center;
+    background: #fff;
+    z-index: 13500;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    -webkit-transition-property: opacity,-webkit-transform,border-radius;
+    -moz-transition-property: opacity,-moz-transform,border-radius;
+    transition-property: opacity,transform,border-radius;
+}
+
+.image-crop .cropper-container{
+    position: relative;
+    margin: 0 auto;
+}
+
+.facebook-card .card-header {
+    display: block;
+    padding: 10px;
+}
+
+.facebook-card .facebook-avatar {
+    float: left;
+}
+
+.facebook-card .facebook-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.facebook-card .facebook-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+}
+
+.facebook-card .card-footer {
+    background: #fafafa;
+}
+
+.facebook-card .card-footer a {
+    color: #81848b;
+    font-weight: 500;
+}
+
+.facebook-card .card-content img {
+    display: block;
+}
+
+.facebook-card .card-content-inner {
+    padding: 15px 10px;
+}
+
+.categories a{
+    position: relative;
+    margin-left:90%;
+    max-width: 70px;
+    text-align: center;
+}
+
+.categories div{
+    position: absolute;
+    text-align: center;
+}
+
+.swiper-container .list-block ul:before{
+    background-color: transparent !important;
+}
+
+.swiper-container .list-block .item-inner:after{
+    background-color: transparent !important;
+}
+
+.swiper-wrapper .button{
+    display: inline !important;
+    padding:10px;
+    overflow: hidden;
+}
+
+body{
+    overflow-y: hidden;
+}

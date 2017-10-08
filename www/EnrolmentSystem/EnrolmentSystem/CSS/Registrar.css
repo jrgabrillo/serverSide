@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+	.DataMarker{width:15px; height:15px; border-radius:15px;}
+	table.EnterRating td{background:#; border-bottom:none !important; cursor:pointer;}
+	.RatingChoices select{
+		padding:2px; width:50px; font-size:15px;
+	}
+	.RatingChoices input[type="button"]{
+		padding:4px; font-size:15px;
+	}
+	#ReportGenerationx{
+		font-size:15px; color:#666;
+	}
+	#ReportGenerationx .Graph{
+		min-height:400px; width:100%; box-sizing:border-box; padding:10px;
+		color:#666; margin:0 auto;
+	}	
+	.Graph div.Title{
+		font-size:20px; font-weight:bold; color:#666; padding:10px; border-bottom:1px solid #ccc;
+	}
+	.Legends ul{
+		border:none !important;
+	}	
+	.Legends ul:hover{
+		background:none !important;
+	}	
+	.Legends li{
+		display:block !important;
+	}
+	#PrintableUnits{
+		display:none;
+	}
+	#PrintableGrades{
+		display:none;
+	}
+	#PrintableGoodMoral{
+		display:none;
+	}
+	#PrintableOTR{
+		display:none;
+	}
+	#StudentProgam{
+		visibility:hidden;
+	}
+	select#StudentGender{
+		width:145px;
+	}
+	select#StudentCivilStatus{
+		width:145px;
+	}
+	.Locator{
+		font-size:12px; color:#666; font-weight:bold;
+	}
+	.Locator span:hover{
+		font-size:12px; color:orange; font-weight:bold; cursor:pointer;
+	}
+	#Content{
+		width:100%; box-sizing:border-box; padding-bottom:100px;
+		margin-top:5px; margin-right: 5px;
+	}
+	#Content #RegistrarContent{
+		width:70%; margin:0 auto; /* padding-top:30px; background:#fff; overflow:hidden;	*/
+	}
+	.Print{
+		display:none;
+	}
+
+	#ReportGeneration table{
+		border:0px solid #ccc; border-bottom:none; color:#666; font-size:15px;  background:#fff;
+	}
+	#ReportGeneration td{
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box; height:35px;
+	}
+	#PopUpMessageContent{
+		position:relative; width:30%; min-height:300px; background:#fff; margin:0 auto; margin-top:15%;
+	}
+	select#OldStudentCourse{
+		width:400px;
+	}
+	#OldSubjectList select{
+		display:inline-block;
+	}
+	#OldSubjectList div{
+		display:inline-block;
+	}
+
+	.disabled{
+		cursor: not-allowed;
+		background-color: #eee;
+		opacity: 1;		
+		pointer-events: none;
+	}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+	#Header{
+		width:100%; height:40px; font-size:15px; font-weight:100 !important; color:#fff;
+	}
+
+	.RatingInput select{
+		font-size:15px; width:70px;
+	}
+	ul#SInfo{
+		background:#f00;
+		width:300px;	
+	}
+	#Header{
+		position:absolute; top:0px;
+	}
+	#Content{
+		width:100% !important; box-sizing:border-box; padding-bottom:100px;
+		margin-top:0px; 
+	}
+	#Content #RegistrarContent{
+		width:70% !important; margin:0 auto; padding-top:30px; /* background:#fff; overflow:hidden;	*/
+	}
+	#AdminAddDropDown{
+		min-height:50px; min-width:130px; display:none; cursor:pointer; float:right; position:absolute; top:30px; right:3%;
+	}
+	#AdminAddDropDown li:nth-child(2){
+		border-bottom:1px solid rgba(255,255,255,0.2); border-top:5px solid rgba(0,0,0,0.2);
+	}
+	#AdminAddDropDown li{
+		list-style:none; margin-left:0px; background:#fff;
+		background:rgba(0,102,204,0.9);
+		height:40px; box-sizing:border-box; padding:12px;
+		color:rgba(255,255,255,0.9);
+		border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+	}
+	#AdminAddDropDown li:hover{
+		background:rgba(0,102,204,1);
+	}
+	#AdminAddDropDown
+	 ul{
+		margin-top:0px;
+	}
+
+	#StudentInfoDropDown{
+		min-height:50px; width:130px; display:none; cursor:pointer; float:right; position:absolute; right:10%; top:30px;
+	}
+	#StudentInfoDropDown li:nth-child(2){
+		border-bottom:1px solid rgba(255,255,255,0.2); border-top:5px solid rgba(0,0,0,0.2);
+	}
+	#StudentInfoDropDown li{
+		list-style:none; margin-left:0px; background:#fff;
+		background:rgba(0,102,204,0.9);
+		height:40px; box-sizing:border-box; padding:12px;
+		color:rgba(255,255,255,0.9);
+		border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.2);
+	}
+	#StudentInfoDropDown li:hover{
+		background:rgba(0,102,204,1);
+	}
+	#StudentInfoDropDown ul{
+		margin-top:0px;
+	}
+	

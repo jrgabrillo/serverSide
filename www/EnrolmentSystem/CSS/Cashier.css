@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+	input[type="text"]{
+		width:100% !important; padding:5px; font-size:15px; border:thin solid #ccc;
+	}
+	input:focus{
+		box-shadow:0px 2px 1px #ccc inset;
+		-webkit-box-shadow:0px 2px 1px #ccc inset;
+		-moz-box-shadow:0px 2px 1px #ccc inset;
+		-ms-box-shadow:0px 2px 1px #ccc inset;
+		-o-box-shadow:0px 2px 1px #ccc inset;
+	}
+	#Header{
+		position:absolute; top:0px;
+	}
+	#Content{
+		width:100% !important; box-sizing:border-box; padding-bottom:100px; <x>overflow-y:scroll;
+	}
+	#Content #RegistrarContent{
+		width:70% !important; margin:0 auto; padding-top:30px; /* background:#fff; overflow:hidden;	*/
+	}
+	#StudentsProgram input[type="text"]{
+		margin-left:45px; font-size:15px; padding:8px;
+	}
+	#PictureProfile img{
+		width:100px; height:100px;
+	}
+	#PrintMe{
+		float:right;
+	}
+	.TitleHr{
+		color:#666; border:1px solid #ccc; border-bottom:0px solid #ccc; width:90%; margin:0 auto; height:0px; margin-top:30px; margin-bottom:20px;
+	}
+	.TitleHr span{
+		background:#fff;  border:1px solid #ccc;
+		position:relative; top:-10px; padding:5px;
+	}
+	#EnrolledSubjectsList table{
+		border:1px solid #ccc; border-bottom:none; color:#666; font-size:15px; margin-top:20px; background:#fff;
+	}
+	#EnrolledSubjectsList td{
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box; padding:5px;
+	}
+	#Cashier table{
+		border:1px solid #ccc; border-bottom:none; color:#666; font-size:15px; margin-top:20px; background:#fff;
+	}
+	#Cashier td{
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box; padding:5px;
+	}
+	#Cashier input[type="text"]{
+		background:#; width:200px; display:inline-block; font-size:15px; <x>margin:10px;
+	}
+	#Cashier input[type="button"]{
+		background:#; font-size:15px; padding:5px;
+	}
+	#StudentsProgram #AssessmentCode{
+		width:300px;
+	}
+	#ShowAssessment,#HideAssessment{
+		margin-left:45px;
+	}
+

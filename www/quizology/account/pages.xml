@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+	<quiz_1>
+		<div class='row'>
+			<div class='col s12 m12 l12'>
+				<code>
+					var w = 800,h = 600;<br/>
+					var game = 1._____ Phaser.Game(w, h, 2. ___________, '');<br/>
+					var mambobola = 3. ___________(){}<br/>
+					mambobola.4.___________ = {<br/>
+					    5. __________: function(){ // 1st function that phaser runs. loads all <br/>necessary files<br/>
+					    }, <br/>
+					    6. __________: function(){ // prepare your codes here. i.e physics<br/>
+					    }, <br/>
+					    7. __________: function(){ // this function runs every milliseconds<br/>
+					    }<br/>
+					}<br/>
+					8. ______________; // add the game state here with an identifier "gamePlay" that runs automatically when the game started<br/>
+				</code>
+			</div>
+		</div>
+	</quiz_1>
+	<quiz_2>
+		<code>
+			1. What are the 3 most supported audio format (3 points).<br/>
+			2.  basicGame.prototype = {<br/>
+			    	preload: function(){<br/>
+			    		a. //add your game audio here with the sound earthquake and an identifier: backgroundMusic<br/><br/>
+
+			    		b. //add your game audio here with the sound cry and an identifier: soundEffect<br/>
+			    	},<br/>
+			    	create:function(){<br/>
+			    		c. // declare your background music here and assign it to variable bgMusic. Do not add the optional parameters.<br/><br/>
+
+			    		d. // play the bgMusic here.<br/><br/>
+
+			    		process.loopAudio(7000);<br/><br/>
+
+			    		e. // declare your sound effect here and assign it to variable soundEffect.  Do not add the optional parameters.<br/>
+			    		f. // play the soundEffect here.<br/>
+			    	},<br/>
+			    	update:function(){<br/><br/>
+
+			    	}<br/>
+			    }<br/>
+
+			    var process = function(){<br/>
+			    	"use strict"<br/>
+			    	return {<br/>
+			    		loopAudio:function(time){<br/>
+			    			g. // add the loop functionality here<br/>
+			    		}<br/>
+			    	}<br/>
+			    }();<br/>
+		</code>
+		<directory>
+			directory:<br/>
+			gameDev<br/>
+				|<br/>
+				+- music<br/>
+				|	|<br/>
+				|	+-cry.mp3<br/>
+				|	+-earthquake.mp3<br/>
+				|<br/>
+				+- img<br/>
+				|<br/>
+				+- js<br/>
+				|	|<br/>
+				|	+- phaser.min.js<br/>
+				|	+- process1.js<br/>
+				|	+- process2.js<br/>
+				|	+- process3.js<br/>
+				|<br/>
+				+- index.html<br/>
+		</directory>
+	</quiz_2>
+	<quiz_3>
+		<code>
+			I. Tile Sprite<br/>
+			    bg1 = game.add. 1._____________(2. ____, 3.____, 4. _______, 5. ________, 6. _______); // give the function used to make a tile sprite and its respective parameters.<br/>
+
+			var imageHeight;<br/>
+			basicGame.prototype = {<br/>
+			    preload: function(){<br/>
+			        game.load.image("bundok1","img/mountains-back.png");<br/>
+			        game.load.image("bundok2","img/mountains-mid1.png");<br/>
+			        game.load.image("bundok3","img/mountains-mid2.png");<br/>
+			    },<br/>
+			    create: function(){<br/>
+			        game.stage.7._____________ = "#ddd"; // change the game background color to light gray or #ddd;<br/><br/>
+
+			        imageHeight = 8.___________________________________; // get the cached image height of bundok1;<br/>
+			        bg1 = game.add.tileSprite(0,<br/>
+			            game.height - imageHeight,<br/>
+			            bounds,<br/>
+			            imageHeight,<br/>
+			            'bundok1');<br/>
+
+			        imageHeight = 9.___________________________________; // get the cached image height of bundok2;<br/>
+			        bg2 = game.add.tileSprite(0,<br/>
+			            game.height - imageHeight,<br/>
+			            bounds,<br/>
+			            imageHeight,<br/>
+			            'bundok2');<br/>
+
+			        imageHeight = 10.___________________________________; // get the cached image height of bundok3;<br/>
+			        bg3 = game.add.tileSprite(0,<br/>
+			            game.height - imageHeight,<br/>
+			            bounds,<br/>
+			            imageHeight,<br/>
+			            'bundok3');<br/>
+			    },<br/>
+			    update: function(){<br/>
+			        bg1.11. _____________.x -= 1; //function to animate or move the tiles<br/>
+			        bg2.12. _____________.x -= 0.6;//function to animate or move the tiles<br/>
+			        bg3.13. _____________.x -= 0.1;//function to animate or move the tiles<br/>
+			    }<br/>
+			};<br/><br/>
+			game.state.add("play",basicGame,true);			<br/>
+		</code>
+	</quiz_3>
+</content>

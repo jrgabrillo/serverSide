@@ -1,0 +1,42 @@
+<h2>CHANGELOG</h2>
+<h4>Version 1.3.3</h4>
+<pre>
+[NEW] User Authentication Added
+[NEW] Chat system added
+</pre>
+
+<h4>Version 1.3.2</h4>
+<pre>
+[UPDATE] Bootstrap v3.3.1 for admin and frontend template.
+[UPDATE] Pace library updated to latest version.
+[FIX] Left sidebar search placeholder bug fixed
+[FIX] Left sidebar menu collapsed bug fixed
+[FIX] Frontend slow loading issue fixed
+[FIX] Top bar minor css issues fixed
+</pre>
+
+<h4>Version 1.3.1</h4>
+<pre>
+[NEW] Dashboard v2 added
+[NEW] Breadcrumbs added
+[FIX] Dropdown menu alignment fixed
+</pre>
+
+<h4>Version 1.3</h4>
+<pre>
+[NEW] Frontend template added with PHP contact form
+[FIX] Header mobile issue fixed
+</pre>
+
+<h4>Version 1.2</h4>
+<pre>
+[NEW] Application dropdown added with option to enable disable widgets
+[FIX] Some responsiveness issues fixed on profile page
+[FIX] Speed improvements
+</pre>
+
+<h4>Version 1.1</h4>
+<pre>
+[NEW] 2 new color schemes
+[FIX] Some responsiveness issues fixed on sidebars
+</pre>
